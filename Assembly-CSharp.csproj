@@ -63,10 +63,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Skript\Create.cs" />
     <Compile Include="Assets\Skript\Destroy.cs" />
     <Compile Include="Assets\Skript\Pushk.cs" />
     <Compile Include="Assets\Skript\StartGame.cs" />
-    <Compile Include="Assets\Skript\create.cs" />
     <Compile Include="Assets\Skript\fly.cs" />
     <Reference Include="UnityEngine">
       <HintPath>D:/Unity/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

@@ -18,7 +18,7 @@ public class Destroy : MonoBehaviour
     {
         print("1");
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
         print("3");
         

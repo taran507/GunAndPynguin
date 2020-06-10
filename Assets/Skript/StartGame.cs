@@ -16,19 +16,19 @@ public class StartGame : MonoBehaviour
         txt.GetComponent<GameObject>();
         anim1.GetComponent<Animation>();
         
-        
     }
     IEnumerator MyCorutine()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(10f);
     }
     private void OnMouseDown()
     {
 
         anim1.Play();
         StartCoroutine(MyCorutine());
-        create = new Create(gameObjects.Length, gameObjects);
-        create.createLvl();
+        create = new Create(gameObjects);
+        create.createHero();
+        create.createEnemy();
         sost = true;
     }
     private void FixedUpdate()

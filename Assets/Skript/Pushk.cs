@@ -18,9 +18,13 @@ public class Pushk : MonoBehaviour
             yadro.GetComponent<GameObject>();
             Instantiate(yadro,FirePoint.position,FirePoint.rotation);
         }
-    }
-    private void Update()
-    {
-        
+        if (Input.GetMouseButton(0))
+        {
+            var mousePosition = Input.mousePosition;
+            mousePosition = Camera.main.ScreenToWorldPoint(mousePosition); //положение мыши из экранных в мировые координаты
+            var angle = Vector2.Angle(Vector2.right, mousePosition - transform.position);//угол между вектором от объекта к мыше и осью х
+            transform.eulerAngles = new Vector3(0f, 0f, transform.position.y < mousePosition.y ? angle : -angle);//немного магии на последок
+        }
     }
 }
+

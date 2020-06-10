@@ -64,8 +64,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Skript\Create.cs" />
-    <Compile Include="Assets\Skript\Destroy.cs" />
+    <Compile Include="Assets\Skript\EnemyDeath.cs" />
+    <Compile Include="Assets\Skript\GameController.cs" />
     <Compile Include="Assets\Skript\Pushk.cs" />
+    <Compile Include="Assets\Skript\Record.cs" />
     <Compile Include="Assets\Skript\StartGame.cs" />
     <Compile Include="Assets\Skript\fly.cs" />
     <Reference Include="UnityEngine">
